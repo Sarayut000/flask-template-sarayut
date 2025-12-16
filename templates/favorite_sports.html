@@ -1,9 +1,8 @@
-{% extend 'layout.html' %}
+{% extends 'layout.html' %}
 
 {% block title %}
- {{ title }}
+ {{title}}
 {% endblock %}
-
 
 {% block content %}
  <h1>{{ title }}</h1>
@@ -16,10 +15,8 @@
  </ol>
  <h2>รายการกีฬาที่ฉันโปรดปราน(for loop)</h2>
  <ol>
-  { %for sports in sports%}
+  {% for sports in sports %}
   <li><h3>{{ sports }}</h3></li>
   {% endfor %}
  </ol>
 {% endblock %}
-
-

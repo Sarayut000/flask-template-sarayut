@@ -29,5 +29,5 @@ def favorite_foods():
 def favorite_sports():
     title= 'Favorite Sprots Page'
     sports = ['ฟุตบอล', 'บาสเกตบอล', 'แบดมินตัน']
-    return render_template('favorite_sprots.html', title=title, sports=sports)
+    return render_template('favorite_sports.html', title=title, sports=sports)
 

@@ -9,11 +9,12 @@
  <h2>My name is {{ name }}</h2>
  <h2>My email is {{ email }}</h2>
  <h2>My mobile phone number is {{ mobile }}</h2>
- {5 if age >=50 %}
- <h2>Older</h2>
+ {% if age >= 50 %}
+   <h1>Older</h1>
  {% else %}
- <h2>Younger</h2>
+   <h1>Younger</h1>
  {% endif %}
+ 
 {% endblock %}
 
 
